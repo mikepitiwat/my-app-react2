@@ -76,7 +76,7 @@ export default class Showdata extends Component{
             villageID:this.state.villageID,
             villageName:this.state.villageName,
             Subdistrict:this.state.Subdistrict,
-            District:this.state.Subdistrict,
+            District:this.state.District,
             Province:this.state.Province,
             zipcode:this.state.zipcode
         }
@@ -92,7 +92,7 @@ export default class Showdata extends Component{
             villageID:this.state.villageID,
             villageName:this.state.villageName,
             Subdistrict:this.state.Subdistrict,
-            Distric:this.state.Subdistrict,
+            Distric:this.state.District,
             Province:this.state.Province,
             zipcode:this.state.zipcode
         }
