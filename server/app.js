@@ -10,7 +10,7 @@ app.use(express.static(path.resolve(__dirname, '..', 'build')));
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'vBHZ7vMytCUF4W',
     database: 'reactsql'
 });
 // show data

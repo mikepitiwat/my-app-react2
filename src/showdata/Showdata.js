@@ -31,7 +31,7 @@ export default class Showdata extends Component{
     }
 
     onDelete=(user)=>{
-        let url = 'http://localhost:3000/delete';
+        let url = 'http://35.185.186.61:3000/delete';
         let data = {
             idkey:user.userid
         }
@@ -68,7 +68,7 @@ export default class Showdata extends Component{
         this.setState({
             [e.target.id]: e.target.value
         });
-        let url = 'http://localhost:3000/data';
+        let url = 'http://35.185.186.61:3000/data';
         let data = {
             idkey:this.state.idkey,
             firstname:this.state.firstname,
@@ -84,7 +84,7 @@ export default class Showdata extends Component{
     }
 
     handleClicked(){
-        let url = 'http://localhost:3000/data';
+        let url = 'http://35.185.186.61:3000/data';
         let data = {
             idkey:this.state.idkey,
             firstname:this.state.firstname,

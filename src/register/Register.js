@@ -24,7 +24,7 @@ export default class Register extends Component{
         });
     }
     handleClicked(){
-        let url = 'http://localhost:3000/data';
+        let url = 'http://35.185.186.61:3000/data';
         let data = {
             idkey:this.state.idkey,
             firstname:this.state.firstname,
