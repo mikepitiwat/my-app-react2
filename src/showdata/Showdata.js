@@ -31,7 +31,7 @@ export default class Showdata extends Component{
     }
 
     onDelete=(user)=>{
-        let url = 'http://35.185.186.61:3000/delete';
+        let url = 'http://localhost:3000/delete';
         let data = {
             idkey:user.userid
         }
@@ -68,7 +68,7 @@ export default class Showdata extends Component{
         this.setState({
             [e.target.id]: e.target.value
         });
-        let url = 'http://35.185.186.61:3000/data';
+        let url = 'http://localhost:3000/data';
         let data = {
             idkey:this.state.idkey,
             firstname:this.state.firstname,
@@ -84,7 +84,7 @@ export default class Showdata extends Component{
     }
 
     handleClicked(){
-        let url = 'http://35.185.186.61:3000/data';
+        let url = 'http://localhost:3000/data';
         let data = {
             idkey:this.state.idkey,
             firstname:this.state.firstname,
@@ -92,7 +92,7 @@ export default class Showdata extends Component{
             villageID:this.state.villageID,
             villageName:this.state.villageName,
             Subdistrict:this.state.Subdistrict,
-            Distric:this.state.District,
+            District:this.state.District,
             Province:this.state.Province,
             zipcode:this.state.zipcode
         }
@@ -104,7 +104,7 @@ export default class Showdata extends Component{
             villageID:"",
             villageName:"",
             Subdistrict:"",
-            Distric:"",
+            District:"",
             Province:"",
             zipcode:""
         });
@@ -125,7 +125,7 @@ export default class Showdata extends Component{
                             <th>Last Name</th>
                             <th>villageID</th>
                             <th>Subdistrict</th>
-                            <th>Distric</th>
+                            <th>District</th>
                             <th>Province</th>
                             <th>zipcode</th>
                         </thead>
