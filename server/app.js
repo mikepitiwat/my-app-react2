@@ -35,7 +35,7 @@ app.put('/delete', function(req, res) {
 //edit
 app.put('/data', function(req, res) {
     var sql = 'UPDATE users SET firstname= ? , lastname = ? , villageID = ? , villageName = ? , Subdistrict = ? , District = ? , Province = ? , zipcode = ? WHERE userid = ?';
-    db.query(sql,[req.body.firstname,req.body.lastname,req.body.villageID,req.body.villageName,req.body.Subdistrict,req.body.Distric,req.body.Province,req.body.zipcode,req.body.idkey],function (error, results) {
+    db.query(sql,[req.body.firstname,req.body.lastname,req.body.villageID,req.body.villageName,req.body.Subdistrict,req.body.District,req.body.Province,req.body.zipcode,req.body.idkey],function (error, results) {
         if(error) throw error;
         res.send(JSON.stringify(results));
     });
